@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Flexbox Layout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background: rgba(0,0,0,0.25);
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            #logo {
+                width: 100px;
+                height: 50px;
+            }
+            nav { 
+                background-color: rgba(0,0,0,0.25);
+            }
+            nav ul li { 
+                display: inline;
+            }
+            
+            #hero {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10px;
+                flex-flow: wrap; /*better for mobile, but tutorial didn't use*/
+            }
+            .herographic {
+                background: rgba(0,0,0,.25);
+            }
+            .herographic img {
+                width: 100%;
+            }
+            .heroheading {
+                margin: 0 0 10px 10px;
+                text-align: center;
+            }
+            .herobutton {
+                background: rgba(0,0,0,.25);
+                width: 50%; 
+                text-align: center;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 0 auto;
+            }
+            
+            #articles {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10px;
+                flex-flow: wrap; /*better for mobile, but tutorial didn't use*/
+            }
+            .articlecontainer {
+                width: 300px; 
+                margin: 5px 10px 5px 10px;
+            }
+            .articlecontainer img {
+                width: 100%;
+            }
+            
+            footer {
+                height: 50px;
+                text-align: center;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="https://via.placeholder.com/100x50"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Menu Item</a></li>
+                    <li><a href="#">Menu Item</a></li>
+                    <li><a href="#">Menu Item</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="hero">
+            <div class="herographic"><img src="https://via.placeholder.com/500x500"></div>
+            <div style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="heroheading">
+                <h1>The Big Brown Dog Never Jumped Over the Lazy Fox</h1>
+            </div>
+                <div class="herobutton">Hero Button</div>
+            </div>
+        </section>
+        <section id="articles">
+            <div class="articlecontainer">
+                <img src="https://via.placeholder.com/300x200">
+                <h2>Article Title</h2>
+                <p>This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.</p>
+            </div>
+            <div class="articlecontainer">
+                <img src="https://via.placeholder.com/300x200">
+                <h2>Article Title</h2>
+                <p>This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.</p>
+            </div>
+            <div class="articlecontainer">
+                <img src="https://via.placeholder.com/300x200">
+                <h2>Article Title</h2>
+                <p>This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.
+                This is a paragraph. This is a paragraph. This is a paragraph.</p>
+            </div>
+        </section>
+        <footer>Footer</footer>
+    </body>
+</html>

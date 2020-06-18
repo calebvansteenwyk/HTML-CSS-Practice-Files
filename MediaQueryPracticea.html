@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Media Queries</title>
+        <meta name="viewport" content="width=device=width, initial-scale=1">
+        
+        <style>
+/*Applies to all parts of the webpage */
+            * {
+                margin: 0;
+            }
+            body { background: rgba(255, 0, 0, .25); }
+            
+            header { 
+                background: rgba(0, 0, 0, 0.25);
+                margin-bottom: 10px;
+                height: 50px;}
+            section { 
+                background: rgba(0, 0, 0, 0.25);
+                margin-bottom: 10px;
+                height: 500px;}
+            aside { 
+                background: rgba(0, 0, 0, 0.25);
+                margin-bottom: 10px;
+                height: 500px;}
+            footer { 
+                background: rgba(0, 0, 0, 0.25);
+                margin-bottom: 10px;
+                height: 500px; }
+/*Applies to 768px-1199px screens */
+            @media screen and (min-width: 768px) {
+                body { background: rgba(0, 255, 0, .25); }
+                aside { display: block; }
+            }
+/*Applies to 1200px+ screens */
+            @media screen and (min-width: 1200px) {
+                body { background: rgba(0, 0, 255, .25); }
+                section { 
+                    float: left; 
+                    width: 69%;
+                }
+                aside { 
+                    float: right;
+                    width: 30%;
+                }
+                footer { clear: both; }
+            }
+        </style>
+    </head>
+    <body>
+        <header>Header</header>
+        <section>Section</section>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </body>
+</html>
